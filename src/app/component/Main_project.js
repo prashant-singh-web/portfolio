@@ -22,7 +22,7 @@ function Main_project() {
         <div className="w-full grid-rows-2 bg-gray-200 shadow-xl rounded overflow-hidden duration-300 ease-in-out hover:shadow-[0_0_5px_black] hover:-translate-x-1 hover:-translate-y-1">
           <div className="w-full h-[150px] grid place-items-center"><FaWhatsapp className=" w-20 h-20 text-green-500"/></div>
           <div className="w-full h-[100px] flex flex-col p-3">
-            <p className="text-base capitalize  text-black font-semibold ">youtube</p>
+            <p className="text-base capitalize  text-black font-semibold ">Whatsapp</p>
             <p className="text-xs capitalize font-normal text-gray-600 line-clamp-2">react,tailwind</p>
           </div>
         </div>
