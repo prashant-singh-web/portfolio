@@ -3,9 +3,9 @@ import React from "react";
 function About_page() {
   return (
     <div className="w-full flex flex-col items-center bg-gray-100 dark:bg-[#111827] py-10">
-           <p className="text-2xl  font-semibold p-5 border-b-2 font-mono mb-6">What about me ?</p>
+           <p className="text-2xl capitalize font-bold p-5 text-gray-700 dark:text-white dark:border-white border-gray-900 border-b-2 font-mono mb-6">What about me ?</p>
 
-      <div className="w-3/4 bg-white dark:bg-white/5 shadow-lg rounded-lg p-8 text-gray-700 dark:text-gray-300">
+      <div className="w-3/4 bg-white dark:bg-white/5 xsm:w-full md:w-[90%] lg:w-3/4 shadow-lg rounded-lg p-8 text-gray-700 dark:text-gray-300">
         <p className="text-lg font-medium leading-relaxed">
           Hi, my name is Prashant Singh and I am a web development enthusiast. I am a full stack web developer.
           <br /><br />

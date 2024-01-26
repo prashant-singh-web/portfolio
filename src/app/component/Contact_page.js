@@ -11,20 +11,20 @@ import {
 
 function Contact_page() {
   return (
-    <div className="w-full flex flex-col items-center bg-gray-100 dark:bg-[#111827] h-fit py-10">
-      <p className="text-2xl  font-semibold p-5 border-b-2 font-mono mb-6">
+    <div className="w-full flex flex-col items-center bg-gray-100 dark:bg-[#111827]">
+      <p className="text-2xl capitalize font-bold p-5 text-gray-700 dark:text-white dark:border-white border-gray-900 border-b-2 font-mono mb-6">
         Get in touch
       </p>
-      <div className="w-3/4 grid grid-rows-2 ">
-        <div className="w-full h-fit  grid grid-cols-2 xsm:grid-cols-1">
-          <div className="w-full flex flex-col justify-center items-center py-10">
-            <p className="text-5xl font-black">We{"'"}re here</p>
-            <p className="text-sm font-medium mt-4">
+      <div className="w-3/4 flex flex-col xsm:w-full md:w-3/4 ">
+        <div className="w-full h-fit  grid grid-cols-2 xsm:grid-cols-1 md:grid-cols-2">
+          <div className="w-full flex text-gray-500 flex-col text-left mx-3 py-10">
+            <p className="text-3xl font-black md:text-5xl ">We{"'"}re here</p>
+            <p className="text-sm font-medium mt-4 px-1 xsm:text-xs md:text-sm">
               “Our doors are always open for a productive conversation.”
             </p>
           </div>
           <div className="w-full flex flex-col text-left px-5 py-10 bg-white/50 text-gray-800">
-            <p className="text-5xl font-black">Let{"'"}s talk</p>
+            <p className=" font-black text-3xl md:text-5xl">Let{"'"}s talk</p>
             <p className="text-sm font-medium mt-4">
               “share your excitement with us”
             </p>
@@ -34,8 +34,8 @@ function Contact_page() {
             </p>
           </div>
         </div>
-        <div className="w-full flex flex-col  h-fit py-5 justify-center items-center">
-          <ul className="flex flex-row space-x-10 text-gray-400 text-3xl my-10 xsm:my-4 xsm:space-x-7 md:space-x-10">
+        <div className="w-full flex flex-col   py-5 justify-center items-center">
+          <ul className="flex flex-row space-x-10 text-gray-400 text-3xl  xsm:my-4 xsm:space-x-7 md:space-x-10">
             {/* put your url in href="url" */}
             <li>
               <Link
@@ -71,8 +71,7 @@ function Contact_page() {
             </li>
           </ul>
           <p className=" text-sm font-normal text-gray-400 dark:text-gray-700 xsm:mb-3">
-            © 2019 - {new Date().getFullYear()} Prashant Singh, Inc. All rights
-            reserved.
+            © 2019 - {new Date().getFullYear()} Prashant Singh.
           </p>
         </div>
       </div>
