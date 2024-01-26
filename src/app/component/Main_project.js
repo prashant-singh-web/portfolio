@@ -8,7 +8,7 @@ function Main_project() {
   return (
     <div className="w-full flex flex-col justify-between items-center">
       <p className="text-2xl capitalize font-bold p-5 text-gray-700 dark:text-white dark:border-white border-gray-900 border-b-2 font-mono mb-6">projects work</p>
-      <div className="w-3/4 h-1/4  grid grid-cols-4 gap-2 px-10 py-5 xsm:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 ">
+      <div className="w-full h-1/4  grid grid-cols-4 gap-2 px-10 py-5 xsm:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:w-3/4 ">
         <Link href={`https://amazonin-six.vercel.app/`}>
         <div className="group w-full relative min-h-full bg-gray-200 dark:bg-[#111827] dark:shadow dark:shadow-gray-700 grid-rows-2  rounded overflow-hidden duration-300 ease-in-out  hover:bg-white dark:hover:bg-black/10">
           <div className="group-hover:-z-10 duration-200 ease-in-out w-full h-full absolute inset-0 z-20 grid place-items-center bg-gray-200 dark:bg-[#111827]"> <FaAmazon className="w-[50%] h-[50%] text-gray-400"/></div>
