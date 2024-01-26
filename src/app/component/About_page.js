@@ -2,9 +2,10 @@ import React from "react";
 
 function About_page() {
   return (
-    <div className="w-full flex flex-col items-center bg-gray-100 py-10">
-      <h1 className="text-4xl capitalize font-bold text-blue-600 mb-5">About Me</h1>
-      <div className="w-3/4 bg-white shadow-lg rounded-lg p-8 text-gray-700">
+    <div className="w-full flex flex-col items-center bg-gray-100 dark:bg-[#111827] py-10">
+           <p className="text-2xl  font-semibold p-5 border-b-2 font-mono mb-6">What about me ?</p>
+
+      <div className="w-3/4 bg-white dark:bg-white/5 shadow-lg rounded-lg p-8 text-gray-700 dark:text-gray-300">
         <p className="text-lg font-medium leading-relaxed">
           Hi, my name is Prashant Singh and I am a web development enthusiast. I am a full stack web developer.
           <br /><br />

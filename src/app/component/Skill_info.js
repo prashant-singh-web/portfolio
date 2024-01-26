@@ -1,27 +1,55 @@
-import React from 'react';
+"use client"
+import React, { useEffect } from "react";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { BsFiletypeScss, BsGit, BsGithub } from "react-icons/bs";
+import { DiJavascript1, DiMysql } from "react-icons/di";
+import { TbApi } from "react-icons/tb";
+import { DiMongodb } from "react-icons/di";
+
+
+
 
 function Skill_info() {
+  
+ 
   return (
-    <div className='w-full flex flex-col justify-center items-center bg-gray-100 py-10'>
-      <h1 className='text-2xl capitalize font-bold text-blue-600 mb-5'>My Skills</h1>
-      <div className="w-3/4 grid grid-cols-1 gap-5 md:grid-cols-4">
-        {[
-          { title: 'Frontend', skills: ['React Js', 'Next Js', 'HTML'] },
-          { title: 'Style', skills: ['CSS', 'SCSS', 'Tailwind Css', 'Material Ui'] },
-          { title: 'Backend', skills: ['Express Js', 'Node Js'] },
-          { title: 'Database', skills: ['Mongodb', 'Mysql'] },
-          { title: 'Api', skills: ['Rest Api'] },
-          { title: 'Cloud', skills: ['Github'] },
-        ].map((category, index) => (
-          <div key={index} className=" shadow-xl rounded overflow-hidden duration-300 ease-in-out   p-5">
-            <p className='text-xl capitalize text-black font-semibold text-center mb-3'>{category.title}</p>
-            <ul className='text-lg font-medium cursor-pointer my-2 text-black capitalize '>
-              {category.skills.map((skill, index) => (
-                <li key={index} className='py-1 px-3 mb-2 text-center rounded-md  bg-[#E5E7EB] duration-300 ease-in-out  hover:text-blue-600 '>{skill}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+    <div className="w-full flex flex-col justify-center items-center bg-gray-100 dark:bg-[#111827] py-10">
+      <p className="text-2xl capitalize font-semibold p-5 border-b-2 font-mono mb-6">Skills</p>
+      <div className="w-[90%] grid grid-cols-4 gap-1 xsm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div data-aos="zoom-out"  className="w-full duration-300 ease-in-out group grid place-items-center bg-white dark:bg-white/5 dark:hover:bg-white/10 hover:bg-gray-100  py-10">
+          <FaReact className="text-gray-400 duration-300 ease-in-out cursor-pointer text-[8rem] group-hover:text-cyan-600" />
+        </div>
+        <div data-aos="zoom-out" className="w-full duration-300 ease-in-out group grid place-items-center bg-white dark:bg-white/5 dark:hover:bg-white/10 hover:bg-gray-100  py-10">
+          <SiNextdotjs className="text-gray-400 duration-300 ease-in-out cursor-pointer text-[8rem] group-hover:text-black" />
+        </div>
+        <div data-aos="zoom-out" className="w-full duration-300 ease-in-out group grid place-items-center bg-white dark:bg-white/5 dark:hover:bg-white/10 hover:bg-gray-100  py-10">
+          <SiTailwindcss className="text-gray-400 duration-300 ease-in-out cursor-pointer text-[8rem] group-hover:text-cyan-400" />
+        </div>
+        <div data-aos="zoom-out"  className="w-full duration-300 ease-in-out group grid place-items-center bg-white dark:bg-white/5 dark:hover:bg-white/10 hover:bg-gray-100  py-10">
+          <DiJavascript1 className="text-gray-400 duration-300 ease-in-out cursor-pointer text-[8rem] group-hover:text-black" />
+        </div>
+        <div data-aos="zoom-out"  className="w-full duration-300 ease-in-out group grid place-items-center bg-white dark:bg-white/5 dark:hover:bg-white/10 hover:bg-gray-100  py-10">
+          <BsFiletypeScss className="text-gray-400 duration-300 ease-in-out cursor-pointer text-[8rem] group-hover:text-pink-400" />
+        </div>
+        <div data-aos="zoom-out"  className="w-full duration-300 ease-in-out group grid place-items-center bg-white dark:bg-white/5 dark:hover:bg-white/10 hover:bg-gray-100  py-10">
+          <TbApi className="text-gray-400 duration-300 ease-in-out cursor-pointer text-[8rem] group-hover:text-lime-400" />
+        </div>
+        <div data-aos="zoom-out"  className="w-full duration-300 ease-in-out group grid place-items-center bg-white dark:bg-white/5 dark:hover:bg-white/10 hover:bg-gray-100  py-10">
+          <DiMongodb className="text-gray-400 duration-300 ease-in-out cursor-pointer text-[8rem] group-hover:text-green-700" />
+        </div>
+        <div data-aos="zoom-out"  className="w-full duration-300 ease-in-out group grid place-items-center bg-white dark:bg-white/5 dark:hover:bg-white/10 hover:bg-gray-100  py-10">
+          <DiMysql className="text-gray-400 duration-300 ease-in-out cursor-pointer text-[8rem] group-hover:text-orange-400" />
+        </div>
+        <div data-aos="zoom-out"  className="w-full duration-300 ease-in-out group grid place-items-center bg-white dark:bg-white/5 dark:hover:bg-white/10 hover:bg-gray-100  py-10">
+          <FaNodeJs className="text-gray-400 duration-300 ease-in-out cursor-pointer text-[8rem] group-hover:text-lime-600" />
+        </div>
+        <div data-aos="zoom-out"  className="w-full duration-300 ease-in-out group grid place-items-center bg-white dark:bg-white/5 dark:hover:bg-white/10 hover:bg-gray-100  py-10">
+          <BsGithub className="text-gray-400 duration-300 ease-in-out cursor-pointer text-[8rem] group-hover:text-black" />
+        </div>
+        <div data-aos="zoom-out"  className="w-full duration-300 ease-in-out group grid place-items-center bg-white dark:bg-white/5 dark:hover:bg-white/10 hover:bg-gray-100  py-10">
+          <SiTypescript className="text-gray-400 duration-300 ease-in-out cursor-pointer text-[8rem] group-hover:text-blue-700" />
+        </div>
       </div>
     </div>
   );
