@@ -1,0 +1,60 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+    transform: translate3d(150px, 50%, 2em);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+    transform: translate3d(0px, 0%, 0em);
+  }
+}
+*{
+  scroll-behavior: smooth;
+}
+*::-webkit-scrollbar{
+  display: hidden;
+  width: 0px;
+}
+@layer components {
+  .box-1 {
+    @apply text-9xl  text-gray-200 border p-7 rounded-md;
+  }
+  .box-2{
+    @apply border border-gray-600/75 bg-violet-900/30 aspect-square grid place-items-center rounded-md  ;
+   
+  }
+  .flashing-anime{
+    @apply relative before:absolute overflow-hidden before:w-4 before:translate-x-[-130px] hover:before:translate-x-[200px] before:ease-in-out before:duration-700 before:h-96 before:bg-white/5 before:rotate-[-35deg];
+  }
+}
+.shadow-animetion{
+  animation: pulse1 2s infinite ease-in-out ;
+}
+@keyframes pulse1 {
+  0%{
+    box-shadow:inset 0px 0px 0px skyblue ;
+  }
+  20%{
+    box-shadow: inset 0px 0px 5px skyblue;
+  }
+  40%{
+    box-shadow:inset 0px 0px 10px skyblue;
+  }
+  60%{
+    box-shadow:inset 0px 0px 15px skyblue;
+  }
+  100%{
+    box-shadow:inset 0px 0px 20px skyblue;
+  }
+}
