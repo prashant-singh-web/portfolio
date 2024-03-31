@@ -14,7 +14,7 @@ function OnTimeDelivery() {
         </p>
       </div>
       <div className="w-full h-full grid place-items-center">
-<CiDeliveryTruck className='size-56 text-gray-500/50'/>
+<CiDeliveryTruck className='text-[15rem] text-gray-500/50'/>
       </div>
         
     </div>
