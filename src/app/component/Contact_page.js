@@ -43,28 +43,28 @@ function Contact_page() {
                 href="https://www.instagram.com/_mr_frontweb_/?utm_source=qr&igshid=ZDExYjZkNGI0OA%3D%3D"
                 className="hover:text-gray-500  duration-200 ease-linear"
               >
-                <FaInstagram className="size-12" />
+                <FaInstagram className="size-24" />
               </Link>
            
               <Link
                 href="https://www.whatsapp.com/channel/0029VaAUu3O0gcfH9CtTwv1Y"
                 className="hover:text-gray-600  duration-200 ease-linear"
               >
-                <FaWhatsapp  className="size-12"/>
+                <FaWhatsapp  className="size-24"/>
               </Link>
            
               <Link
                 href="https://www.linkedin.com/in/prashant-singh-268854290/"
                 className="hover:text-gray-600  duration-200 ease-linear "
               >
-                <FaLinkedin className="size-12" />
+                <FaLinkedin className="size-24" />
               </Link>
            
               <Link
                 href="http://github.com/prashant-singh-web"
                 className="hover:text-gray-600  duration-200 ease-linear "
               >
-                <FaGithub className="size-12" />
+                <FaGithub className="size-24" />
               </Link>
            
         </div>
