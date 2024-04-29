@@ -25,11 +25,10 @@ export default function Home() {
    
   }, []);
   return (
-    <main className="flex w-full   min-h-screen flex-col items-center bg-black">
-      <Web_header/>
-      {/* <Landingpage/> */}
-    <Aboutme/>
-     
+    <main className="flex w-full dark:bg-[#111827] text-white min-h-screen flex-col items-center bg-white">
+      {/* <Web_header /> */}
+      <Homepage/>
+      <About_page />
       <Main_project />
      <Mywork_page/>
      <Skills/>
