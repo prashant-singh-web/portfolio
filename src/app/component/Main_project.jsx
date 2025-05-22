@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 
 function Main_project() {
+ 
+
   const projects = [
     {
       title: "Growth.cx",
@@ -73,13 +75,7 @@ function Main_project() {
   ];
 
   return (
-    <div
-      id="project"
-      className="w-[90%] flex flex-col justify-between items-center my-10"
-    >
-      <p className="text-4xl capitalize font-extrabold p-5 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-mono mb-6">
-        Project
-      </p>
+   
 
       <div className="w-full mx-auto grid grid-cols-1 gap-8">
         {projects.map((project, index) => (
@@ -125,7 +121,9 @@ function Main_project() {
       </div>
       
       
-    </div>
+      
+      
+  
   );
 }
 

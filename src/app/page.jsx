@@ -18,6 +18,8 @@ import My_Work_Experience from './component/My_Work_Experience';
 
 
 
+
+
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -26,10 +28,14 @@ export default function Home() {
    
   }, []);
   return (
+  
     <main className="flex w-full  text-white min-h-screen flex-col items-center bg-black">
       <Web_header />
       <Aboutme />
       <Main_project />
+      <My_Work_Experience/>
+     <MY_Skill/>
+     <Contact_us/>
       <My_Work_Experience/>
      <MY_Skill/>
      <Contact_us/>
