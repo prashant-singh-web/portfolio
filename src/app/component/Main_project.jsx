@@ -78,6 +78,9 @@ function Main_project() {
    
 
       <div className="w-full mx-auto grid grid-cols-1 gap-8">
+         <h2 className="text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r to-blue-500 from-violet-500 mb-10">
+       Projects
+      </h2>
         {projects.map((project, index) => (
           <div
             key={index}

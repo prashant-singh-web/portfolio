@@ -36,9 +36,7 @@ export default function Home() {
       <My_Work_Experience/>
      <MY_Skill/>
      <Contact_us/>
-      <My_Work_Experience/>
-     <MY_Skill/>
-     <Contact_us/>
+     
     </main>
   );
 }
