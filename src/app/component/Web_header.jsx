@@ -12,7 +12,7 @@ function Web_header() {
       {stars.map((star) => (
         <div
           key={star}
-          className="fixed bg-white rounded-full z-[9]"
+          className="fixed bg-white rounded-full z-[1000]"
           style={{
             top: `${Math.random() * 100}%`,
             left: `${Math.random() * 100}%`,
@@ -38,7 +38,7 @@ function Web_header() {
         loop
         autoPlay
         muted
-        className="w-[230%] absolute bg-red-500 -top-[3.7rem] hidden sm:block sm:-top-[8.2rem] sma:-top-[8.6rem] smb:-top-[8.8rem] smc:-top-[9rem] smd:-top-[9.4rem] sme:-top-[9.75rem] md:-top-[10.5rem] mda:-top-[10.9rem] mdb:-top-[11.3rem] mdc:-top-[11.9rem] mdd:-top-[12.5rem] mde:-top-[13.2rem] mdf:-top-[14rem] mdg:-top-[15.2rem] lg:-top-[15rem] lga:-top-[16rem] lgb:-top-[17rem] lgc:-top-[18rem] xl:-top-[19rem] rotate-180 left-0 z-[8]"
+        className="w-[230%] absolute bg-red-500 -top-[3.7rem] hidden sm:block sm:-top-[8.2rem] sma:-top-[8.6rem] smb:-top-[8.8rem] smc:-top-[9rem] smd:-top-[9.4rem] sme:-top-[9.75rem] md:-top-[10.5rem] mda:-top-[10.9rem] mdb:-top-[11.3rem] mdc:-top-[11.9rem] mdd:-top-[12.5rem] mde:-top-[13.2rem] mdf:-top-[14rem] mdg:-top-[15.2rem] lg:-top-[15rem] lga:-top-[16rem] lgb:-top-[17rem] lgc:-top-[18rem]  xl:-top-[19rem] rotate-180 left-0 z-[8]"
       >
         <source src="/blackhole.webm" type="video/mp4" />
         Your browser does not support the video tag.

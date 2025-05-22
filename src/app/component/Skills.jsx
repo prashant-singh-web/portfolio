@@ -1,23 +1,29 @@
 "use client"
 import React from "react";
+import { BsWordpress } from "react-icons/bs";
+import { DiAws, DiBugsense, DiFirebase, DiPostgresql } from "react-icons/di";
 import { FaCss3, FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
 import {
   SiExpress,
+  SiFirebase,
   SiHtml5,
   SiMongodb,
   SiNextdotjs,
   SiTailwindcss,
+  SiWebflow,
 
 } from "react-icons/si";
+
+
 import { TbApi, TbApiApp, TbBrandNextjs } from "react-icons/tb";
 
-function Skills() {
+function MY_Skill() {
 
   return (
     <div    id="skills" className="w-full flex flex-col items-center space-y-6 scroll-smooth  py-10">
-      <h1 className="text-4xl capitalize font-bold text-transparent bg-clip-text bg-gradient-to-r to-blue-500 from-violet-500 mb-5">
+      <h2 className="text-4xl capitalize font-bold text-transparent bg-clip-text bg-gradient-to-r to-blue-500 from-violet-500 mb-5">
         My Skills
-      </h1>
+      </h2>
     
       <div className=" mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
         <SiHtml5 className="box-1 border-red-500 shadow-[inset_0px_0px_30px_skyblue] shadow-red-600" />
@@ -30,9 +36,14 @@ function Skills() {
         <SiMongodb className="box-1 border-green-600 text-green-500 shadow-[inset_0px_0px_30px_skyblue] shadow-green-600" />
         <TbApi className="box-1 border-sky-500 shadow-[inset_0px_0px_30px_skyblue] shadow-sky-600" />
         <FaGithub className="box-1 border-sky-500 shadow-[inset_0px_0px_30px_skyblue] shadow-sky-600 " />
+      <SiWebflow className="box-1 border-sky-500 shadow-[inset_0px_0px_30px_skyblue] shadow-sky-600 " />
+      <BsWordpress className="box-1 border-white shadow-[inset_0px_0px_30px_white] shadow-white " />
+      <SiFirebase className="box-1 border-orange-500 shadow-[inset_0px_0px_30px_orange] shadow-orange-500 text-orange-500 " />
+      <DiAws className="box-1 border-orange-500 shadow-[inset_0px_0px_30px_orange] shadow-orange-500 text-orange-500 " />
+      <DiPostgresql className="box-1 border-sky-500 shadow-[inset_0px_0px_30px_skyblue] shadow-sky-600 " />
       </div>
     </div>
   );
 }
 
-export default Skills;
+export default MY_Skill;
