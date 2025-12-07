@@ -12,7 +12,9 @@ import {
   SiTailwindcss,
   SiWebflow,
 
+
 } from "react-icons/si";
+
 
 
 import { TbApi, TbApiApp, TbBrandNextjs } from "react-icons/tb";
@@ -41,6 +43,8 @@ function MY_Skill() {
       <SiFirebase className="box-1 border-orange-500 shadow-[inset_0px_0px_30px_orange] shadow-orange-500 text-orange-500 " />
       <DiAws className="box-1 border-orange-500 shadow-[inset_0px_0px_30px_orange] shadow-orange-500 text-orange-500 " />
       <DiPostgresql className="box-1 border-sky-500 shadow-[inset_0px_0px_30px_skyblue] shadow-sky-600 " />
+
+      
       </div>
     </div>
   );

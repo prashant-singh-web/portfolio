@@ -56,11 +56,11 @@ function Contact_us() {
         {/* Right: Profile Image */}
         <div className="w-full  justify-center hidden md:flex">
           <Image
-            src="/prashant-logo.png"
+            src="/prashantsingh.png"
             alt="Prashant Singh"
             width={350}
             height={350}
-            className="rounded-full border border-violet-500 shadow-lg object-cover"
+            className="rounded-full border border-violet-500 shadow-lg object-cover relative z-[1000]"
           />
         </div>
       </div>

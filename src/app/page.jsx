@@ -15,6 +15,7 @@ import Main_project from "./component/Main_project";
 import MY_Skill from "./component/Skills";
 import Contact_us from './component/Contact_us';
 import My_Work_Experience from './component/My_Work_Experience';
+import Head from 'next/head';
 
 
 
@@ -30,6 +31,10 @@ export default function Home() {
   return (
   
     <main className="flex w-full  text-white min-h-screen flex-col items-center bg-black">
+      <Head>
+        <title>PRASHANT SINGH | Full-Stack Web Developer</title>
+        <meta name="description" content="PRASHANT SINGH | Full-Stack Web Developer" />
+      </Head>
       <Web_header />
       <Aboutme />
       <Main_project />
