@@ -11,8 +11,6 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiWebflow,
-
-
 } from "react-icons/si";
 
 
