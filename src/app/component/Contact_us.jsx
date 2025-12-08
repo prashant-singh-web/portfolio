@@ -56,7 +56,7 @@ function Contact_us() {
         {/* Right: Profile Image */}
         <div className="w-full  justify-center hidden md:flex">
           <Image
-            src="/prashantsingh.png"
+            src="/prashantSingh.png"
             alt="Prashant Singh"
             width={350}
             height={350}
