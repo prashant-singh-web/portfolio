@@ -1,132 +1,152 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
+import { ExternalLink, Code2, ArrowRight } from "lucide-react";
+
+const projects = [
+  {
+    title: "Growth.cx",
+    img: "/growth.cx.png",
+    link: "https://growth.cx/",
+    tech: ["WordPress", "Tailwind CSS", "AWS Route53", "Hostinger"],
+  },
+  {
+    title: "GCX Academy",
+    img: "/gcx.png",
+    link: "https://www.gcx.academy/",
+    tech: ["WordPress", "Tailwind CSS", "Swiper.js", "Subdomain Mgmt"],
+  },
+  {
+    title: "Suitejar",
+    img: "/suitejar.png",
+    link: "https://suitejar.com/",
+    tech: ["React.js", "TypeScript", "Firebase Auth", "Ant Design"],
+  },
+  {
+    title: "AN Corporation",
+    img: "/anCorporation.png",
+    link: "https://ancorporationanc.com/",
+    tech: ["Next.js", "Tailwind CSS", "AOS", "Hostinger"],
+  },
+  {
+    title: "Gallery Vision",
+    img: "/gallery.png",
+    link: "https://gallery.vision/",
+    tech: ["WordPress", "Tailwind CSS", "Swiper.js"],
+  },
+  {
+    title: "Dermamedecon",
+    img: "/derma.png",
+    link: "https://www.dermamedecon.com/",
+    tech: ["PHP", "FileZilla", "Swiper.js"],
+  },
+  // Add others here...
+];
 
 function Main_project() {
- 
-
-  const projects = [
-    {
-      title: "Growth.cx",
-      img: "/growth.cx.png",
-      link: "https://growth.cx/",
-      tech: "WordPress Theme, Tailwind CSS, Swiper.js,github,dns management transfer aws route53 to hostinger",
-    },
-    {
-      title: "GCX Academy",
-      img: "/gcx.png",
-      link: "https://www.gcx.academy/",
-      tech: "WordPress Theme, Tailwind CSS, Swiper.js,github ,subdomain creation and wordpress installation on hostinger",
-    },
-    {
-      title: "Suitejar",
-      img: "/suitejar.png",
-      link: "https://suitejar.com/",
-      tech: "WordPress Theme, Tailwind CSS, Swiper.js,React js,Typescript,Firebase for Auth,Antd,github",
-    },
-    {
-      title: "Gallery Vision",
-      img: "/gallery.png",
-      link: "https://gallery.vision/",
-      tech: "WordPress Theme, Tailwind CSS, Swiper.js,github",
-    },
-    {
-      title: "Aiotests",
-      img: "/aiotest.png",
-      link: "https://www.aiotests.com/",
-      tech: "webflow",
-    },
-    {
-      title: "P3 LOGIQ",
-      img: "/p3logiq.png",
-      link: "https://www.p3logiq.com/",
-      tech: "webflow",
-    },
-    {
-      title: "Industryapps",
-      img: "/indusrtyapps.png",
-      link: "https://www.industryapps.net/",
-      tech: "webflow",
-    },
-    {
-      title: "Dermamedecon",
-      img: "/derma.png",
-      link: "https://www.dermamedecon.com/",
-      tech: "PHP,filezilla for deployment,Swiper.js",
-    },
-    {
-      title: "unlock360",
-      img: "/unlock.png",
-      link: "https://unlock360.co/",
-      tech: "wordpress site updates",
-    },
-    {
-      title: "Refo",
-      img: "/refo.png",
-      link: "https://refo-automation.webflow.io/cfpb-1033-open-banking-switch",
-      tech: "webflow one page created and developing their monthly newsletter",
-    },
-    {
-      title: "AN Corporation",
-      img: "/anCorporation.png",
-      link: "https://ancorporationanc.com/",
-      tech: "Next js,Tailwind css,Aos,Hostinger",
-    },
-   
-  ];
-
   return (
-   
+    <section id="project" className="py-20 bg-black">
+      <div className="w-full mx-auto px-6">
+        {/* Header Section */}
+        <div className="text-center mb-20" data-aos="fade-up">
+          <h2 className="text-5xl md:text-7xl font-black text-white mb-4">
+            SELECTED <span className="text-violet-600">WORKS</span>
+          </h2>
+          <div className="h-1 w-20 bg-violet-600 mx-auto rounded-full" />
+        </div>
 
-      <div className="w-full mx-auto grid grid-cols-1 gap-8">
-         <h2 className="text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r to-blue-500 from-violet-500 mb-10">
-       Projects
-      </h2>
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="w-full max-w-[800px] mx-auto backdrop-blur-sm bg-white/20 border border-white/30 rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-2 shadow-lg transition-all duration-300"
-          >
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:opacity-90 transition-opacity"
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full lg:max-w-6xl mx-auto">
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              viewport={{ once: true }}
+              data-aos="zoom-in-up"
             >
-              <Image
-                src={project.img}
-                alt={project.title}
-                width={100}
-                height={100}
-                className="w-full h-full object-cover aspect-video"
-                unoptimized
-              />
-            </a>
-            <div className="p-5 flex flex-col justify-between bg-white/60">
-              <div>
-                <h2 className="text-2xl font-bold mb-2 text-gray-800">
-                  {project.title}
-                </h2>
-                <p className="text-base text-gray-700">
-                  <span className="font-semibold">Tech used:</span> {project.tech}
-                </p>
-              </div>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-block text-center px-4 py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold hover:scale-105 transition-transform"
+              <Tilt
+                tiltMaxAngleX={10}
+                tiltMaxAngleY={10}
+                perspective={1000}
+                glareEnable={true}
+                glareMaxOpacity={0.2}
+                className="h-full"
               >
-                View Project
-              </a>
-            </div>
-          </div>
-        ))}
+                <div className="group relative bg-white/5 border border-white/10 rounded-3xl overflow-hidden h-full flex flex-col transition-all hover:border-violet-500/50">
+                  {/* Image Container */}
+                  <div className="relative aspect-video overflow-hidden">
+                    <Image
+                      src={project.img}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      unoptimized
+                    />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        className="p-4 bg-white text-black rounded-full transform translate-y-10 group-hover:translate-y-0 transition-transform duration-300"
+                      >
+                        <ExternalLink size={24} />
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Content Container */}
+                  <div className="p-5 md:p-8 flex flex-col flex-grow bg-gradient-to-b from-transparent to-black/50">
+                    <div className="flex justify-between items-start mb-4">
+                      <h3 className="text-2xl font-bold text-white group-hover:text-violet-400 transition-colors">
+                        {project.title}
+                      </h3>
+                      <Code2 className="text-violet-500 opacity-50" size={20} />
+                    </div>
+
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {project.tech.map((t, i) => (
+                        <span 
+                          key={i} 
+                          className="px-3 py-1 text-[10px] font-bold uppercase tracking-widest bg-violet-500/10 border border-violet-500/20 text-violet-400 rounded-lg"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      className="mt-auto inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-white/10 hover:bg-violet-600 text-white font-semibold transition-all"
+                    >
+                      Visit Case Study <ExternalLink size={16} />
+                    </a>
+                  </div>
+                </div>
+              </Tilt>
+            </motion.div>
+          ))}
+        </div>
       </div>
-      
-      
-      
-      
-  
+       <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="mt-32 text-center"
+        >
+          <p className="text-gray-500 font-medium mb-4 italic text-lg">Looking for a technical partner to architect your next high-performance build?</p>
+          <a 
+            href="#contact" 
+            className="group inline-flex items-center gap-3 text-white text-3xl font-black border-b-2 border-violet-500 pb-2 hover:text-violet-400 hover:border-white transition-all"
+          >
+            Let's discuss the architecture <ArrowRight size={28} className="group-hover:translate-x-2 transition-transform" />
+          </a>
+        </motion.div>
+    </section>
   );
 }
 
