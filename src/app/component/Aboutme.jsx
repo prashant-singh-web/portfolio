@@ -60,7 +60,7 @@ function Aboutme() {
           </div>
 
           <h3 data-aos="fade-up" data-aos-delay="200" className="text-3xl text-violet-500 font-mono mb-2">
-            const developer = "PRASHANT SINGH";
+            const developer = &quot;PRASHANT SINGH&quot;;
           </h3>
 
           <h1 data-aos="fade-up" data-aos-delay="400" className="text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter">
@@ -73,7 +73,7 @@ function Aboutme() {
           <p data-aos="fade-up" data-aos-delay="600" className="text-lg md:text-xl text-gray-500 leading-relaxed max-w-xl mb-10">
             I am a <span className="text-white">Senior Frontend Engineer</span> and Fullstack Architect. 
             Since 2019, I have been crafting high-end digital experiences using 
-            the modern JavaScript ecosystem. I don't just write code; I build 
+            the modern JavaScript ecosystem. I don&apos;t just write code; I build 
             performant, scalable, and beautiful solutions.
           </p>
 

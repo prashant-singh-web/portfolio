@@ -33,7 +33,7 @@ function Contact_us() {
             </div>
 
             <p className="text-xl text-gray-400 max-w-2xl leading-relaxed font-light">
-              Stop settling for "just a developer." Secure a technical partner who understands 
+              Stop settling for &quot;just a developer.&quot; Secure a technical partner who understands 
               <span className="text-white font-medium"> infrastructure, automation, and full-stack architecture </span> 
               at a professional scale. Currently based in India, operating globally.
             </p>
