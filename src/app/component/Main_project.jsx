@@ -19,6 +19,18 @@ const projects = [
     tech: ["WordPress", "Tailwind CSS", "Swiper.js", "Subdomain Mgmt"],
   },
   {
+    title: "surakshasewasamarpan",
+    img: "/surakshasewasamarpan.png",
+    link: "https://surakshasewasamarpan.org/",
+    tech: ["WordPress", "Tailwind CSS", "Swiper.js", "DNS Transfer","Animation"],
+  },
+  {
+    title: "KhetiHelp",
+    img: "/khetihelp.png",
+    link: "https://khetihelp.com/",
+    tech: ["WordPress", "Tailwind CSS", "Swiper.js", "DNS Transfer","Animation","Custom Post","SEO Setup"],
+  },
+  {
     title: "Suitejar",
     img: "/suitejar.png",
     link: "https://suitejar.com/",
@@ -26,9 +38,9 @@ const projects = [
   },
   {
     title: "AN Corporation",
-    img: "/anCorporation.png",
+    img: "/anc.png",
     link: "https://ancorporationanc.com/",
-    tech: ["Next.js", "Tailwind CSS", "AOS", "Hostinger"],
+    tech: ["Wordpress", "Tailwind CSS", "AOS", "Hostinger"],
   },
   {
     title: "Gallery Vision",

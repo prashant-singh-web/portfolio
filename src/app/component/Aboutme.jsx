@@ -83,9 +83,9 @@ function Aboutme() {
                 Download CV <LucideMousePointer2 size={18} />
               </span>
             </button>
-            <button className="px-8 py-4 border border-white/20 hover:border-violet-500/50 hover:bg-violet-500/5 text-white font-bold rounded-2xl transition-all">
+            <a href="#contact" className="px-8 py-4 border border-white/20 hover:border-violet-500/50 hover:bg-violet-500/5 text-white font-bold rounded-2xl transition-all">
               Contact Me
-            </button>
+            </a>
           </div>
         </div>
 
