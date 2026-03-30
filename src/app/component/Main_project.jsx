@@ -31,6 +31,18 @@ const projects = [
     tech: ["WordPress", "Tailwind CSS", "Swiper.js", "DNS Transfer","Animation","Custom Post","SEO Setup"],
   },
   {
+    title: "p3logiq",
+    img: "/p3logiq.png",
+    link: "https://www.p3logiq.com/",
+    tech: ["Webflow"],
+  },
+  {
+    title: "AIOTESTS",
+    img: "/aiotest.png",
+    link: "https://www.aiotests.com/",
+    tech: ["Webflow"],
+  },
+  {
     title: "Suitejar",
     img: "/suitejar.png",
     link: "https://suitejar.com/",
@@ -79,6 +91,7 @@ function Main_project() {
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
               data-aos="zoom-in-up"
+              className="overflow-hidden rounded-3xl"
             >
               <Tilt
                 tiltMaxAngleX={10}
@@ -88,7 +101,7 @@ function Main_project() {
                 glareMaxOpacity={0.2}
                 className="h-full"
               >
-                <div className="group relative bg-white/5 border border-white/10 rounded-3xl overflow-hidden h-full flex flex-col transition-all hover:border-violet-500/50">
+                <div className="group relative overflow-hidden bg-white/5 border border-white/10 rounded-3xl overflow-hidden h-full flex flex-col transition-all hover:border-violet-500/50">
                   {/* Image Container */}
                   <div className="relative aspect-video overflow-hidden">
                     <Image
