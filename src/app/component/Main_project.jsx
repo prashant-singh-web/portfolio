@@ -13,6 +13,12 @@ const projects = [
     tech: ["WordPress", "Tailwind CSS", "AWS Route53", "Hostinger"],
   },
   {
+    title: "AGENCY",
+    img: "/astro.png",
+    link: "https://astro-gilt-three.vercel.app/",
+    tech: ["ASTRO", "Tailwind CSS",],
+  },
+  {
     title: "GCX Academy",
     img: "/gcx.png",
     link: "https://www.gcx.academy/",
@@ -101,7 +107,7 @@ function Main_project() {
                 glareMaxOpacity={0.2}
                 className="h-full"
               >
-                <div className="group relative overflow-hidden bg-white/5 border border-white/10 rounded-3xl overflow-hidden h-full flex flex-col transition-all hover:border-violet-500/50">
+                <div className="group relative  bg-white/5 border border-white/10 rounded-3xl overflow-hidden h-full flex flex-col transition-all hover:border-violet-500/50">
                   {/* Image Container */}
                   <div className="relative aspect-video overflow-hidden">
                     <Image
